@@ -1,0 +1,26 @@
+\documentclass[a4paper,14pt]{extreport}
+\include{(1)preambula}
+
+\begin{document}
+    \includepdf[pages=1]{title}
+
+    \setcounter{page}{3}
+    \include{(13)referat}
+
+    \vspace*{-3cm}
+    \renewcommand\contentsname{
+        \ssr{СОДЕРЖАНИЕ}
+    }
+    \tableofcontents
+
+    \include{(12)abbrv}
+    \include{(2)intro}
+    \include{(3)analytical}
+    \include{(4)design_part}
+    \include{(5)tech_part}
+    \include{(6)research}
+    \include{(7)conclusion}
+
+    \include{library}
+	\include{(14)addict}
+\end{document}
